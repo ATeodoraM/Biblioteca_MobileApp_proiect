@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Biblioteca_MobileApp.Pages.CrudBook">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add Book" Clicked="OnShopListAddedClicked" />
+    </ContentPage.ToolbarItems>
+    <ListView x:Name="listView"
+ Margin="20"
+VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"
+ ItemSelected="OnListViewItemSelected" RowHeight="150">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout  >
+                        <Label Text="{Binding ID}"/>
+                        <Label Text="{Binding Title}"/>
+                        <Label Text="{Binding Author}"/>
+                        <Label Text="{Binding PublishingDate}"/>
+                        <Label Text="{Binding Available,StringFormat='Cartea este valabila pentru un nou imprumut: {0}'}"/>
+                        <Label Text="{Binding Publisher_ID,StringFormat='Id-ul autorului: {0}'}"/>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Biblioteca_MobileApp.Pages.BorrowedBookAdmin"
+             xmlns:local="clr-namespace:Biblioteca_MobileApp">
+    <StackLayout Margin="20">
+        <Editor Placeholder="Enter book status"  Text="{Binding BookReturned}" HeightRequest="100" >
+            <Editor.Behaviors>
+                <local:ValidationBehaviour/>
+            </Editor.Behaviors>
+        </Editor>
+        <Editor Placeholder="Enter borrowed date "  Text="{Binding BorrowedDate}" HeightRequest="100" >
+            <Editor.Behaviors>
+                <local:ValidationBehaviour/>
+            </Editor.Behaviors>
+        </Editor>
+        <Editor Placeholder="Enter return date" Text="{Binding ReturnDate}" HeightRequest="100" >
+            <Editor.Behaviors>
+                <local:ValidationBehaviour/>
+            </Editor.Behaviors>
+        </Editor>
+        <Editor Placeholder="Enter student id" Text="{Binding Person_ID}" HeightRequest="100"/>
+        <Editor Placeholder="Enter book id" Text="{Binding Book_ID}" HeightRequest="100"/>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Text="Save" Clicked="OnSaveButtonClicked" />
+            <Button Grid.Column="1" Text="Delete" Clicked="OnDeleteButtonClicked"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>

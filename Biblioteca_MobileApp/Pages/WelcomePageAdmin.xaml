@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Biblioteca_MobileApp.Pages.WelcomePageAdmin">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding="70" Spacing="30">
+            <Label Text="Inregistrat ca administrator" 
+                 TextColor="Black"
+                 FontAttributes="Bold"
+                FontSize="Large"
+                VerticalOptions="CenterAndExpand"   
+                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Biblioteca Universitara" 
+                 TextColor="Black"
+                 FontAttributes="Bold"
+                FontSize="Large" 
+                    VerticalOptions="CenterAndExpand"   
+                HorizontalOptions="CenterAndExpand"
+              />
+            <Button x:Name="Crudbooks" Text="Carti inregistrate" Clicked="Crudbook_Clicked"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="#E8E800" 
+                    TextColor="Black"
+                    FontSize="Large"/>
+            <Button x:Name="Crudstudenti" Text="Studenti inregistrati" Clicked="Crudstudenti_Clicked"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="#E8E800" 
+                    TextColor="Black"
+                    FontSize="Large"/>
+            <Button x:Name="Crudborrowedbooks" Text="Situatie imprumuturi" Clicked="Crudborrowedbook_Clicked"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="#E8E800" 
+                    TextColor="Black"
+                    FontSize="Large"/>
+            <Button x:Name="Logout" Text="Deconecteaza-ma" Clicked="Logout_Clicked"
+                     HorizontalOptions="FillAndExpand"
+                    BackgroundColor="#E8E800" 
+                    TextColor="Black"
+                    FontSize="Large"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

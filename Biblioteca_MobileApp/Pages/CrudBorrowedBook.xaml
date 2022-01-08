@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Biblioteca_MobileApp.Pages.CrudBorrowedBook">
+   <ContentPage.ToolbarItems>
+    <ToolbarItem Text="Add Client"
+ Clicked="OnShopListAddedClicked" />
+    </ContentPage.ToolbarItems>
+    <ListView x:Name="listView"
+ Margin="50"
+VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"
+ ItemSelected="OnListViewItemSelected" RowHeight="100">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout >
+                        <Label Text="{Binding ID}" />
+                        <Label Text="{Binding BookReturned, StringFormat='Inregistrarea unui retur,1. Altfel, 0: {0}'}" />
+                        <Label Text="{Binding BorrowedDate, StringFormat='Data la care a fost inregistrat imprumutul: {0}'}" />
+                        <Label Text="{Binding ReturnDate, StringFormat='Data la care a fost inregistrat reuturul: {0}'}" />
+                        <Label Text="{Binding Person_ID}" />
+                        <Label Text="{Binding Book_ID}"/>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView> 
+</ContentPage>

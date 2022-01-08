@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Biblioteca_MobileApp.Pages.BookAdmin"
+    xmlns:local="clr-namespace:Biblioteca_MobileApp">
+    <StackLayout Margin="20">
+        <Editor Placeholder="Enter title" Text="{Binding Title}" HeightRequest="100" >
+            <Editor.Behaviors>
+                <local:ValidationBehaviour/>
+            </Editor.Behaviors>
+        </Editor>
+
+        <Editor Placeholder="Enter author" Text="{Binding Author}" HeightRequest="100" />
+        <Editor Placeholder="Enter publishing date" Text="{Binding PublishingDate}" HeightRequest="100" />
+        <Editor Placeholder="Enter 1 if the book is available" Text="{Binding Available}" HeightRequest="100" />
+        <Editor Placeholder="Enter publisher Id" Text="{Binding Publisher_ID}" HeightRequest="100" />
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Text="Save" Clicked="OnSaveButtonClicked" />
+            <Button Grid.Column="1" Text="Delete" Clicked="OnDeleteButtonClicked"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>
