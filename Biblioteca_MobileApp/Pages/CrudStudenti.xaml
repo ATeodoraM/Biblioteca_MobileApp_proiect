@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Biblioteca_MobileApp.Pages.CrudStudenti">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add Client"
+        <ToolbarItem Text="Add student"
  Clicked="OnShopListAddedClicked" />
     </ContentPage.ToolbarItems>
     <ListView x:Name="listView"

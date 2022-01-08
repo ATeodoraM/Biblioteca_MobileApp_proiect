@@ -37,6 +37,10 @@ namespace Biblioteca_MobileApp.Pages
         {
             Navigation.PushAsync(new LoginPage());
         }
+        private void Citate_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Motivatie());
+        }
 
     }
 }

@@ -5,8 +5,7 @@
     <ContentPage.Content>
 
         <StackLayout Orientation="Vertical" Padding="30" Spacing="30">
-            <Label Text="Atentie" TextColor="Black" FontSize="Medium"/>
-            <Label Text="Date necesare pentru autentificare: username=nume, password=numar matricol" TextColor="Black" />
+            <Label Text="Bine ai revenit!" TextColor="Black" />
             <BoxView HeightRequest="10" />
             <Frame BackgroundColor="#BF4B4A3E" HasShadow="False" Padding="50">
 
@@ -14,16 +13,10 @@
                     <Label Text="Username" FontSize="Medium" />
                     <Entry x:Name = "Username" Placeholder = "Username"  HeightRequest = "50"    Keyboard="Default"/>
                     <Label Text="Password" FontSize="Medium"/>
-                    <Entry x:Name ="Password" Placeholder="Password"
-                      HeightRequest="50"
-                      IsPassword="True" />
+                    <Entry x:Name ="Password" Placeholder="Password" HeightRequest="50" IsPassword="True" />
                 </StackLayout>
             </Frame>
-            <Button x:Name="loginbtn" Text="LogIn" Clicked="Loginbtn_Clicked"
-                    HorizontalOptions="FillAndExpand"
-                    BackgroundColor="#E8E800" 
-                    TextColor="Black"
-                    FontSize="Large"/>
+            <Button x:Name="loginbtn" Text="LogIn" Clicked="Loginbtn_Clicked" HorizontalOptions="FillAndExpand" BackgroundColor="#E8E800" TextColor="Black" FontSize="Large"/>
 
         </StackLayout>
         </ContentPage.Content>

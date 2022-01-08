@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Biblioteca_MobileApp.Pages.CrudBorrowedBook">
    <ContentPage.ToolbarItems>
-    <ToolbarItem Text="Add Client"
+    <ToolbarItem Text="Add Borrowed Book"
  Clicked="OnShopListAddedClicked" />
     </ContentPage.ToolbarItems>
     <ListView x:Name="listView"

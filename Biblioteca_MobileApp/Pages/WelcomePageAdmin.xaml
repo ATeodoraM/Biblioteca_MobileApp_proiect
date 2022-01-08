@@ -37,6 +37,12 @@
                     BackgroundColor="#E8E800" 
                     TextColor="Black"
                     FontSize="Large"/>
+            <Button x:Name="Motivatie" Text="Citate" Clicked="Citate_Clicked"
+                     HorizontalOptions="FillAndExpand"
+                    BackgroundColor="#E8E800" 
+                    TextColor="Black"
+                    FontSize="Large"/>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Biblioteca_MobileApp.Pages.Motivatie">
+    <ContentPage.Content>
+        <StackLayout Margin="20,35,0,20"
+             x:Name="stackLayout">
+            <Label Text="Motivatie sa citesti acum"
+           TextColor="Black"
+           HorizontalOptions="Center"
+           VerticalOptions="Start" />
+            <Button Text="Motiveaza-ma"
+            HorizontalOptions="Center"
+            VerticalOptions="Start"
+            Clicked="OnSendClick" />
+            <Label Text="Aminteste-mi sa citesc."
+           TextColor="Black"
+           HorizontalOptions="Center"
+           VerticalOptions="Start" />
+            <Button Text="Creeaza o notificare pentru ziua urmatoare"
+            HorizontalOptions="Center"
+            VerticalOptions="Start"
+            Clicked="OnScheduleClick" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
